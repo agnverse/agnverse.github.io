@@ -1,5 +1,5 @@
 /* ==========================================================
-  AGN Verse Academic Website
+   Nurten Filiz Ak Academic Website
    Version : 1.0
    ========================================================== */
 
@@ -73,7 +73,7 @@ body{
 
 .container{
 
-    width:min(1200px,92%);
+    width:min(1100px,92%);
 
     margin:auto;
 
@@ -111,15 +111,15 @@ header{
 
     align-items:center;
 
-    padding:32px 0;
+    padding:8px 0;
 
 }
 
 .logo{
 
-    font-size:1.6rem;
+    font-size:1.2rem;
 
-    font-weight:700;
+    font-weight:300;
 
     color:var(--primary);
 
@@ -129,7 +129,7 @@ header{
 
     display:flex;
 
-    gap:35px;
+    gap:30px;
 
     list-style:none;
 
@@ -141,7 +141,7 @@ header{
 
     color:var(--secondary);
 
-    font-weight:500;
+    font-weight:400;
 
     transition:.3s;
 
@@ -169,7 +169,7 @@ header{
 
     gap:80px;
 
-    padding-top:150px;
+    padding-top:50px;
 
 }
 
@@ -482,5 +482,101 @@ footer{
     height:250px;
 
 }
+
+}
+
+/* =========================
+   RESEARCH TEAM
+   ========================= */
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    padding: 2rem;
+    border-radius: 16px;
+    background: var(--card-bg, #150941);
+}
+
+.team-photo {
+    flex: 0 0 120px;
+    width: 120px;
+    height: 120px;
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-info {
+    flex: 1;
+}
+
+.team-info h3 {
+    margin: 0 0 0.25rem;
+}
+
+.team-role {
+    margin: 0 0 0.75rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.team-info p {
+    line-height: 1.6;
+}
+
+.team-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.team-links a {
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.team-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-member {
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .team-links {
+        justify-content: center;
+    }
 
 }
