@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News & Announcements | AGNverse - Erciyes University Active Galaxies Research Group</title>
+
+    <meta name="description"
+        content="Latest news, announcements, research highlights, and updates from the AGNverse Active Galaxies Research Group.">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container navbar">
+
+        <div class="logo">
+            <a href="en.html" style="text-decoration: none; display: flex; flex-direction: column;">
+                <span class="logo-title">AGNverse</span>
+                <span class="logo-subtitle">Erciyes University Active Galaxies Research Group</span>
+            </a>
+        </div>
+
+        <nav>
+
+            <ul class="menu">
+
+                <li><a href="en.html">Home</a></li>
+
+                <li><a href="en.html#team">Research Team</a></li>
+
+                <li><a href="en.html#publications">Publications</a></li>
+
+                <li><a href="en.html#software">Software</a></li>
+
+                <li><a href="en.html#opportunities">Opportunities</a></li>
+
+                <li><a href="news-en.html" style="color: var(--accent); font-weight: 700;">News</a></li>
+
+                <li><a href="en.html#contact">Contact</a></li>
+
+                <li class="language-switch">
+                    <a href="news.html">TR</a>
+                    <span>|</span>
+                    <a href="news-en.html" class="active-lang">EN</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<section class="news-section">
+
+    <div class="container">
+
+        <div class="news-header-wrap">
+            <h1>News & Announcements</h1>
+            <p>
+                Stay updated with the latest research milestones, scientific developments, and announcements from the AGNverse team.
+            </p>
+        </div>
+
+<div class="view-switch-container">
+            <div class="view-switch-box">
+                <button id="btn-timeline" class="view-btn active" onclick="switchNewsView('timeline')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    Timeline
+                </button>
+                <button id="btn-compact" class="view-btn" onclick="switchNewsView('compact')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                    Compact List
+                </button>
+            </div>
+        </div>
+
+<div id="news-timeline-view" class="news-timeline">
+
+<div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="news-date-badge">September 2026</span>
+                    <h2>AGNverse Research Group Website Launched!</h2>
+                    <p>
+                        The official website of the AGNverse Research Group at Erciyes University is now live! Our group focuses on active galactic nuclei (AGN), quasar outflows, multi-wavelength astrophysics, and machine learning. You can explore our ongoing research, scientific software projects, and team members through our new digital platform.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+<div id="news-compact-view" class="news-compact-list" style="display: none;">
+
+<div class="compact-item" onclick="toggleCompact(this)">
+                <div class="compact-header">
+                    <span class="compact-title">AGNverse Research Group Website Launched!</span>
+                    <span class="compact-date">September 2026</span>
+                </div>
+                <div class="compact-body">
+                    <p>
+                        The official website of the AGNverse Research Group at Erciyes University is now live! Our group focuses on active galactic nuclei (AGN), quasar outflows, multi-wavelength astrophysics, and machine learning. You can explore our ongoing research, scientific software projects, and team members through our new digital platform.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 AGNverse - Erciyes University Active Galaxies Research Group
+        </p>
+
+    </div>
+
+</footer>
+
+<script>
+    function switchNewsView(view) {
+        const timelineView = document.getElementById('news-timeline-view');
+        const compactView = document.getElementById('news-compact-view');
+        const btnTimeline = document.getElementById('btn-timeline');
+        const btnCompact = document.getElementById('btn-compact');
+
+        if (view === 'timeline') {
+            timelineView.style.display = 'block';
+            compactView.style.display = 'none';
+            btnTimeline.classList.add('active');
+            btnCompact.classList.remove('active');
+        } else {
+            timelineView.style.display = 'none';
+            compactView.style.display = 'flex';
+            btnCompact.classList.add('active');
+            btnTimeline.classList.remove('active');
+        }
+    }
+
+    function toggleCompact(el) {
+        el.classList.toggle('expanded');
+    }
+</script>
+
+</body>
+
+</html>

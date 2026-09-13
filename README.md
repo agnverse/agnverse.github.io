@@ -1,38 +1,22 @@
 
 # AGNverse
 
-Welcome to AGNverse.
+**Erciyes University · Active Galactic Nuclei Research Group**  
+*Erciyes Üniversitesi Aktif Galaksi Araştırma Grubu*
 
-AGNverse is an open astrophysics research group dedicated to understanding Active Galactic Nuclei through multi-wavelength observations, time-domain astronomy, data science, and open-source scientific software.
+AGNverse is an open astrophysics research group dedicated to investigating the structure and nature of Active Galactic Nuclei (AGNs) through multi-wavelength observations, time-domain astronomy, machine learning, and open-source scientific software.
 
----
-
-## Research Areas
-
-- Active Galactic Nuclei
-- Quasars
-- Giant Radio Quasars
-- Radio Galaxies
-- Time-domain Astronomy
-- Binary Supermassive Black Holes
-- Astronomical Data Science
+🔗 **Official Website:** [https://agnverse.github.io/](https://agnverse.github.io/)
 
 ---
 
-## Open Science
+### Contact
 
-AGNverse develops open scientific software, reproducible analysis pipelines, and educational resources for the astronomical community.
+**Erciyes University**  
+Department of Astronomy and Space Sciences  
+Faculty of Science  
+Kayseri, Türkiye  
 
----
+- **Group Leader:** [nfilizak@erciyes.edu.tr](mailto:nfilizak@erciyes.edu.tr)  
+- **GitHub:** [github.com/agnverse](https://github.com/agnverse)
 
-## Website
-
-Coming soon.
-
----
-
-## Contact
-
-Erciyes University
-Department of Astronomy and Space Sciences
-Kayseri, Türkiye
