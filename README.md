@@ -17,6 +17,6 @@ Department of Astronomy and Space Sciences
 Faculty of Science  
 Kayseri, Türkiye  
 
-- **Group Leader:** [nfilizak@erciyes.edu.tr](mailto:nfilizak@erciyes.edu.tr)  
+- **Group Leader:** [nfak@erciyes.edu.tr](mailto:nfak@erciyes.edu.tr)  
 - **GitHub:** [github.com/agnverse](https://github.com/agnverse)
 

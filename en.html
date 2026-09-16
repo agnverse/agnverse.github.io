@@ -5,6 +5,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:;">
 
     <title>AGNverse | Erciyes University Active Galaxies Research Group</title>
 
@@ -26,6 +28,12 @@
             <span class="logo-subtitle">Erciyes University Active Galaxies Research Group</span>
         </div>
 
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
         <nav>
 
             <ul class="menu">
@@ -34,7 +42,7 @@
 
                 <li><a href="#team">Research Team</a></li>
 
-                <li><a href="#publications">Publications</a></li>
+                <li><a href="#research">Research</a></li>
 
                 <li><a href="#software">Software</a></li>
 
@@ -76,6 +84,48 @@
 
     </div>
 
+</section>
+
+<section class="home-news-section">
+    <div class="container">
+        <div class="home-news-wrapper">
+            <div class="home-news-header">
+                <div class="home-news-badge">
+                    <span class="home-news-pulse"></span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #f59e0b;"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+                    <span>Latest News &amp; Announcements</span>
+                </div>
+                <a href="news-en.html" class="home-news-all-btn">
+                    <span>All News</span>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="home-news-grid">
+                <a href="news-en.html#news-uak2026" class="home-news-card">
+                    <div class="home-news-card-header">
+                        <span class="home-news-tag">Congress &bull; September 2026</span>
+                        <span class="home-news-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+                    </div>
+                    <h3 class="home-news-card-title">UAK-2026 Poster Presentations!</h3>
+                    <div class="home-news-card-body">
+                        <p class="home-news-preview">At the National Astronomy Congress (UAK-2026), scientific research co-authored and led by members of our group was presented during the e-poster sessions.</p>
+                        <span class="home-news-read-more">Click to read more &rarr;</span>
+                    </div>
+                </a>
+                <a href="news-en.html#news-suude-tez" class="home-news-card">
+                    <div class="home-news-card-header">
+                        <span class="home-news-tag">Thesis Defense &bull; August 2026</span>
+                        <span class="home-news-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+                    </div>
+                    <h3 class="home-news-card-title">M.Sc. Thesis Defense!</h3>
+                    <div class="home-news-card-body">
+                        <p class="home-news-preview">Our research group graduate student Suude Bayram successfully defended her Master's thesis entitled “Identification of Radio-Loud Quasars Using LOFAR LoTSS Data” on July 28, 2026.</p>
+                        <span class="home-news-read-more">Click to read more &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="hero">
@@ -198,63 +248,18 @@
                             <h4 class="card-back-name">Dr. Nurten Filiz Ak</h4>
                             <p class="card-back-role">Research Group Leader</p>
                             <div class="card-back-email">
-                                <div class="email-badge" title="Click to copy" data-email="nfilizak@erciyes.edu.tr">
-                                    <a href="mailto:nfilizak@erciyes.edu.tr" class="email-mailto-btn" title="Send Email">
+                                <div class="email-badge" title="Click to copy" data-email="nfak@erciyes.edu.tr">
+                                    <a href="mailto:nfak@erciyes.edu.tr" class="email-mailto-btn" title="Send Email">
                                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                                     </a>
-                                    <span class="email-text">nfilizak@erciyes.edu.tr</span>
+                                    <span class="email-text">nfak@erciyes.edu.tr</span>
                                 </div>
                             </div>
                             <div class="team-links card-back-links">
-                                <a href="https://github.com/nfilizak" target="_blank">GitHub</a>
-                                <a href="https://nfilizak.github.io/" target="_blank">Web</a>
-                                <a href="https://scholar.google.com/citations?user=HhNbf2wAAAAJ" target="_blank">Google Scholar</a>
-                                <a href="https://orcid.org/0000-0003-3016-5490" target="_blank">ORCID</a>
-                            </div>
-                            <button class="flip-btn back-flip-btn" type="button" aria-label="Back to biography">
-                                <svg class="flip-icon-back" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-                                <span>Biography</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <div class="flip-inner">
-                    <div class="card-front">
-                        <div class="team-photo">
-                            <img src="assets/images/team/researcher-1.png" alt="M. Turan Sağlam">
-                        </div>
-                        <div class="team-info">
-                            <h3>M. Turan Sağlam</h3>
-                            <p class="team-role">Researcher / Ph.D. Student</p>
-                            <p class="team-bio">
-                                Focuses on scientific programming, machine learning, and astronomical data analysis.
-                            </p>
-                            <button class="flip-btn front-flip-btn" type="button" aria-label="Show contact information">
-                                <span>Contact</span>
-                                <svg class="flip-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-back">
-                        <div class="card-back-content">
-                            <h4 class="card-back-name">M. Turan Sağlam</h4>
-                            <p class="card-back-role">Researcher / Ph.D. Student</p>
-                            <div class="card-back-email">
-                                <div class="email-badge" title="Click to copy" data-email="mturansaglam@">
-                                    <a href="mailto:mturansaglam@" class="email-mailto-btn" title="Send Email">
-                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                                    </a>
-                                    <span class="email-text">mturansaglam@</span>
-                                </div>
-                            </div>
-                            <div class="team-links card-back-links">
-                                <a href="https://github.com/agnverse" target="_blank">GitHub</a>
-                                <a href="#">Web</a>
-                                <a href="#">Google Scholar</a>
-                                <a href="https://orcid.org" target="_blank">ORCID</a>
+                                <a href="https://github.com/nfilizak" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="https://nfilizak.github.io/" target="_blank" rel="noopener noreferrer">Web</a>
+                                <a href="https://scholar.google.com/citations?user=HhNbf2wAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                                <a href="https://orcid.org/0000-0003-3016-5490" target="_blank" rel="noopener noreferrer">ORCID</a>
                             </div>
                             <button class="flip-btn back-flip-btn" type="button" aria-label="Back to biography">
                                 <svg class="flip-icon-back" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
@@ -296,10 +301,55 @@
                                 </div>
                             </div>
                             <div class="team-links card-back-links">
-                                <a href="https://github.com/seyithokelek" target="_blank">GitHub</a>
-                                <a href="https://seyithokelek.github.io/" target="_blank">Web</a>
-                                <a href="https://scholar.google.com/citations?user=B_S19VgAAAAJ" target="_blank">Google Scholar</a>
-                                <a href="https://orcid.org/0000-0002-2534-0584" target="_blank">ORCID</a>
+                                <a href="https://github.com/seyithokelek" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="https://seyithokelek.github.io/" target="_blank" rel="noopener noreferrer">Web</a>
+                                <a href="https://scholar.google.com/citations?user=B_S19VgAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                                <a href="https://orcid.org/0000-0002-2534-0584" target="_blank" rel="noopener noreferrer">ORCID</a>
+                            </div>
+                            <button class="flip-btn back-flip-btn" type="button" aria-label="Back to biography">
+                                <svg class="flip-icon-back" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                                <span>Biography</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="flip-inner">
+                    <div class="card-front">
+                        <div class="team-photo">
+                            <img src="assets/images/team/researcher-1.png" alt="M. Turan Sağlam">
+                        </div>
+                        <div class="team-info">
+                            <h3>M. Turan Sağlam</h3>
+                            <p class="team-role">Researcher / Ph.D. Student</p>
+                            <p class="team-bio">
+                                Focuses on scientific programming, machine learning, and astronomical data analysis.
+                            </p>
+                            <button class="flip-btn front-flip-btn" type="button" aria-label="Show contact information">
+                                <span>Contact</span>
+                                <svg class="flip-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-back-content">
+                            <h4 class="card-back-name">M. Turan Sağlam</h4>
+                            <p class="card-back-role">Researcher / Ph.D. Student</p>
+                            <div class="card-back-email">
+                                <div class="email-badge" title="Click to copy" data-email="mturansaglam@">
+                                    <a href="mailto:mturansaglam@" class="email-mailto-btn" title="Send Email">
+                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                    </a>
+                                    <span class="email-text">mturansaglam@</span>
+                                </div>
+                            </div>
+                            <div class="team-links card-back-links">
+                                <a href="https://github.com/agnverse" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="#">Web</a>
+                                <a href="#">Google Scholar</a>
+                                <a href="https://orcid.org" target="_blank" rel="noopener noreferrer">ORCID</a>
                             </div>
                             <button class="flip-btn back-flip-btn" type="button" aria-label="Back to biography">
                                 <svg class="flip-icon-back" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
@@ -341,10 +391,55 @@
                                 </div>
                             </div>
                             <div class="team-links card-back-links">
-                                <a href="https://github.com/agnverse" target="_blank">GitHub</a>
+                                <a href="https://github.com/agnverse" target="_blank" rel="noopener noreferrer">GitHub</a>
                                 <a href="#">Web</a>
                                 <a href="#">Google Scholar</a>
-                                <a href="https://orcid.org" target="_blank">ORCID</a>
+                                <a href="https://orcid.org" target="_blank" rel="noopener noreferrer">ORCID</a>
+                            </div>
+                            <button class="flip-btn back-flip-btn" type="button" aria-label="Back to biography">
+                                <svg class="flip-icon-back" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                                <span>Biography</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="flip-inner">
+                    <div class="card-front">
+                        <div class="team-photo">
+                            <img src="assets/images/team/researcher-5.jpeg" alt="Birsu Hilal Eser">
+                        </div>
+                        <div class="team-info">
+                            <h3>Birsu Hilal Eser</h3>
+                            <p class="team-role">Researcher / M.Sc. Student</p>
+                            <p class="team-bio">
+                                Conducts research on quasar luminosity and mass functions, and the cosmological evolution of supermassive black holes.
+                            </p>
+                            <button class="flip-btn front-flip-btn" type="button" aria-label="Show contact information">
+                                <span>Contact</span>
+                                <svg class="flip-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-back-content">
+                            <h4 class="card-back-name">Birsu Hilal Eser</h4>
+                            <p class="card-back-role">Researcher / M.Sc. Student</p>
+                            <div class="card-back-email">
+                                <div class="email-badge" title="Click to copy" data-email="birsuhilal@">
+                                    <a href="mailto:birsuhilal@" class="email-mailto-btn" title="Send Email">
+                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                    </a>
+                                    <span class="email-text">birsuhilal@</span>
+                                </div>
+                            </div>
+                            <div class="team-links card-back-links">
+                                <a href="https://github.com/agnverse" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="#">Web</a>
+                                <a href="#">Google Scholar</a>
+                                <a href="https://orcid.org" target="_blank" rel="noopener noreferrer">ORCID</a>
                             </div>
                             <button class="flip-btn back-flip-btn" type="button" aria-label="Back to biography">
                                 <svg class="flip-icon-back" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
@@ -386,10 +481,10 @@
                                 </div>
                             </div>
                             <div class="team-links card-back-links">
-                                <a href="https://github.com/agnverse" target="_blank">GitHub</a>
+                                <a href="https://github.com/agnverse" target="_blank" rel="noopener noreferrer">GitHub</a>
                                 <a href="#">Web</a>
                                 <a href="#">Google Scholar</a>
-                                <a href="https://orcid.org" target="_blank">ORCID</a>
+                                <a href="https://orcid.org" target="_blank" rel="noopener noreferrer">ORCID</a>
                             </div>
                             <button class="flip-btn back-flip-btn" type="button" aria-label="Back to biography">
                                 <svg class="flip-icon-back" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
@@ -498,50 +593,18 @@
 
 </section>
 
-<section id="publications">
+<section id="research">
 
     <div class="container">
 
-        <div class="grid">
+        <div class="research-single">
 
             <div class="card">
 
-                <div class="highlight-number">
-                    21
-                </div>
-
-                <h3>h-index</h3>
+                <h3>Projects and Peer-Reviewed Publications</h3>
 
                 <p class="highlight-text">
-                    Publications in leading international peer-reviewed journals focusing on Active Galactic Nuclei, radio galaxies, and supermassive black holes.
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <div class="highlight-number">
-                    5+
-                </div>
-
-                <h3>Research Software</h3>
-
-                <p class="highlight-text">
-                    Development of scientific software packages, analysis routines, and reproducible open-source research tools for astronomical data.
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <div class="highlight-number">
-                    8+
-                </div>
-
-                <h3>Student Mentorship</h3>
-
-                <p class="highlight-text">
-                    Research guidance and mentorship for undergraduate and graduate students in astrophysics, machine learning, and scientific programming.
+                    Scientific research projects focused on active galactic nuclei, supermassive black holes, and multi-wavelength astrophysics, alongside articles published in internationally recognized peer-reviewed journals.
                 </p>
 
             </div>
@@ -594,7 +657,7 @@
                     <p>
                         Automated 2D-to-1D spectral data reduction and calibration pipeline developed for TFOSC observations on the TUG RTT-150 telescope.
                     </p>
-                    <a href="https://seyithokelek.github.io/projects/EasyReduct/" target="_blank" class="terminal-btn">
+                    <a href="https://seyithokelek.github.io/projects/EasyReduct/" target="_blank" rel="noopener noreferrer" class="terminal-btn">
                         <span>Explore Project</span> &rarr;
                     </a>
                 </div>
@@ -622,7 +685,7 @@
                     <p>
                         Accurate redshift estimation tool for optical quasar and galaxy spectra utilizing cross-correlation templates and emission line profile fitting.
                     </p>
-                    <a href="https://seyithokelek.github.io/projects/zFinder/" target="_blank" class="terminal-btn">
+                    <a href="https://seyithokelek.github.io/projects/zFinder/" target="_blank" rel="noopener noreferrer" class="terminal-btn">
                         <span>Explore Project</span> &rarr;
                     </a>
                 </div>
@@ -714,8 +777,8 @@
 
                 <strong>Group Leader</strong><br>
 
-                <a href="mailto:nfilizak@erciyes.edu.tr">
-                    nfilizak@erciyes.edu.tr
+                <a href="mailto:nfak@erciyes.edu.tr">
+                    nfak@erciyes.edu.tr
                 </a>
 
             </p>
@@ -859,6 +922,35 @@
                 sel.addRange(range);
             });
         });
+    });
+})();
+
+(function() {
+    const btn = document.getElementById('mobileMenuBtn');
+    const menu = document.querySelector('.menu');
+    if (!btn || !menu) return;
+
+    btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const isOpen = menu.classList.toggle('active');
+        btn.classList.toggle('active');
+        btn.setAttribute('aria-expanded', isOpen);
+    });
+
+    menu.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            menu.classList.remove('active');
+            btn.classList.remove('active');
+            btn.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!btn.contains(e.target) && !menu.contains(e.target) && menu.classList.contains('active')) {
+            menu.classList.remove('active');
+            btn.classList.remove('active');
+            btn.setAttribute('aria-expanded', 'false');
+        }
     });
 })();
 </script>

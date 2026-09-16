@@ -5,6 +5,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:;">
 
     <title>News & Announcements | AGNverse - Erciyes University Active Galaxies Research Group</title>
 
@@ -28,6 +30,12 @@
             </a>
         </div>
 
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
         <nav>
 
             <ul class="menu">
@@ -36,7 +44,7 @@
 
                 <li><a href="en.html#team">Research Team</a></li>
 
-                <li><a href="en.html#publications">Publications</a></li>
+                <li><a href="en.html#research">Research</a></li>
 
                 <li><a href="en.html#software">Software</a></li>
 
@@ -86,13 +94,47 @@
 
 <div id="news-timeline-view" class="news-timeline">
 
-<div class="timeline-item">
+            <div id="news-uak2026" class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
                     <span class="news-date-badge">September 2026</span>
-                    <h2>AGNverse Research Group Website Launched!</h2>
+                    <h2>E-Poster Presentations by Our Researchers at the National Astronomy Congress (UAK-2026)</h2>
                     <p>
-                        The official website of the AGNverse Research Group at Erciyes University is now live! Our group focuses on active galactic nuclei (AGN), quasar outflows, multi-wavelength astrophysics, and machine learning. You can explore our ongoing research, scientific software projects, and team members through our new digital platform.
+                        At the National Astronomy Congress (UAK-2026), scientific research co-authored and led by members of our group was presented during the e-poster sessions. The full collection of presentations can be accessed via the <a href="https://uak.info.tr/2026/EPoster" target="_blank" rel="noopener">UAK-2026 E-Poster Portal</a>.
+                    </p>
+                    <p style="margin-top: 12px;">
+                        We warmly congratulate our researchers on their scientific contributions and wish them continued success in their research endeavors.
+                    </p>
+                    <ul class="news-presentation-list">
+                        <li>
+                            <a href="https://sunum.uak.info.tr/2026/P05-010_Birsu.Hilal.Eser.pdf" target="_blank" rel="noopener"><strong>Soltan Argümanı Çerçevesinde Kuazar Parlaklık ve Kütle Fonksiyonlarının Kozmolojik Evriminin İncelenmesi</strong></a>
+                            <span class="news-authors">Birsu Hilal Eser, Nurten Filiz Ak</span>
+                        </li>
+                        <li>
+                            <a href="https://sunum.uak.info.tr/2026/P11-008_Mustafa.Turan.Saglam.pdf" target="_blank" rel="noopener"><strong>XRISM Xtend ve Resolve'un NuSTAR ile Çapraz Kalibrasyonu: Abell 2029'da Sıcaklık ve Akı Ölçümleri Üzerindeki Etkileri</strong></a>
+                            <span class="news-authors">Mustafa Turan Sağlam, Ayşegül Tümer, Nurten Filiz Ak</span>
+                        </li>
+                        <li>
+                            <a href="https://sunum.uak.info.tr/2026/P05-004_Leyla.Altunsu.pdf" target="_blank" rel="noopener"><strong>Blazarların Çok Bantlı Optik Değişkenliğinin ZTF Verileri ile İncelenmesi</strong></a>
+                            <span class="news-authors">Leyla Altunsu, Aslı Zeynep Ağcadağ, Mustafa Turan Sağlam, Nurten Filiz Ak</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="news-suude-tez" class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="news-date-badge">August 2026</span>
+                    <h2>Suude Bayram Successfully Defends Her M.Sc. Thesis</h2>
+                    <p>
+                        Our research group graduate student Suude Bayram successfully defended her Master's thesis entitled <a href="https://avesis.erciyes.edu.tr/yonetilen-tez/b3666453-1424-4b1d-9f54-0baa454afd72/lofar-lotts-verileri-kullanilarak-radyo-guclu-kuazarlarin-belirlenmesi" target="_blank" rel="noopener noreferrer"><strong>“Identification of Radio-Loud Quasars Using LOFAR LoTSS Data”</strong></a> on July 28, 2026.
+                    </p>
+                    <p style="margin-top: 10px;">
+                        The thesis work was evaluated and approved by defense jury members Prof. Dr. Ersin Göğüş, Asst. Prof. Dr. M. Kürşad Yıldız, and thesis advisor Asst. Prof. Dr. Nurten Filiz Ak.
+                    </p>
+                    <p style="margin-top: 10px;">
+                        We warmly congratulate Suude on her productive and successful thesis defense, and wish her continued success in her academic career.
                     </p>
                 </div>
             </div>
@@ -101,14 +143,43 @@
 
 <div id="news-compact-view" class="news-compact-list" style="display: none;">
 
-<div class="compact-item" onclick="toggleCompact(this)">
+            <div id="compact-uak2026" class="compact-item" onclick="toggleCompact(this)">
                 <div class="compact-header">
-                    <span class="compact-title">AGNverse Research Group Website Launched!</span>
+                    <span class="compact-title">E-Poster Presentations at UAK-2026</span>
                     <span class="compact-date">September 2026</span>
                 </div>
                 <div class="compact-body">
                     <p>
-                        The official website of the AGNverse Research Group at Erciyes University is now live! Our group focuses on active galactic nuclei (AGN), quasar outflows, multi-wavelength astrophysics, and machine learning. You can explore our ongoing research, scientific software projects, and team members through our new digital platform.
+                        Scientific studies co-authored by our group members were presented at the National Astronomy Congress (UAK-2026) e-poster sessions. All congress presentations are available via the <a href="https://uak.info.tr/2026/EPoster" target="_blank" rel="noopener">UAK-2026 E-Poster Portal</a>.
+                    </p>
+                    <p style="margin-top: 10px;">
+                        We congratulate our researchers and wish them continued success in their research.
+                    </p>
+                    <ul class="news-presentation-list">
+                        <li>
+                            <a href="https://sunum.uak.info.tr/2026/P05-010_Birsu.Hilal.Eser.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation();"><strong>Soltan Argümanı Çerçevesinde Kuazar Parlaklık ve Kütle Fonksiyonlarının Kozmolojik Evriminin İncelenmesi</strong></a>
+                            <span class="news-authors">Birsu Hilal Eser, Nurten Filiz Ak</span>
+                        </li>
+                        <li>
+                            <a href="https://sunum.uak.info.tr/2026/P11-008_Mustafa.Turan.Saglam.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation();"><strong>XRISM Xtend ve Resolve'un NuSTAR ile Çapraz Kalibrasyonu: Abell 2029'da Sıcaklık ve Akı Ölçümleri Üzerindeki Etkileri</strong></a>
+                            <span class="news-authors">Mustafa Turan Sağlam, Ayşegül Tümer, Nurten Filiz Ak</span>
+                        </li>
+                        <li>
+                            <a href="https://sunum.uak.info.tr/2026/P05-004_Leyla.Altunsu.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation();"><strong>Blazarların Çok Bantlı Optik Değişkenliğinin ZTF Verileri ile İncelenmesi</strong></a>
+                            <span class="news-authors">Leyla Altunsu, Aslı Zeynep Ağcadağ, Mustafa Turan Sağlam, Nurten Filiz Ak</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="compact-suude-tez" class="compact-item" onclick="toggleCompact(this)">
+                <div class="compact-header">
+                    <span class="compact-title">Suude Bayram Successfully Defends M.Sc. Thesis</span>
+                    <span class="compact-date">August 2026</span>
+                </div>
+                <div class="compact-body">
+                    <p>
+                        Our research group graduate student Suude Bayram successfully defended her Master's thesis entitled <a href="https://avesis.erciyes.edu.tr/yonetilen-tez/b3666453-1424-4b1d-9f54-0baa454afd72/lofar-lotts-verileri-kullanilarak-radyo-guclu-kuazarlarin-belirlenmesi" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();"><strong>“Identification of Radio-Loud Quasars Using LOFAR LoTSS Data”</strong></a> on July 28, 2026. Evaluated and approved by jury members Prof. Dr. Ersin Göğüş, Asst. Prof. Dr. M. Kürşad Yıldız, and thesis advisor Asst. Prof. Dr. Nurten Filiz Ak, we warmly congratulate Suude and wish her continued academic success.
                     </p>
                 </div>
             </div>
@@ -154,6 +225,35 @@
     function toggleCompact(el) {
         el.classList.toggle('expanded');
     }
+
+    (function() {
+        const btn = document.getElementById('mobileMenuBtn');
+        const menu = document.querySelector('.menu');
+        if (!btn || !menu) return;
+
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isOpen = menu.classList.toggle('active');
+            btn.classList.toggle('active');
+            btn.setAttribute('aria-expanded', isOpen);
+        });
+
+        menu.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                menu.classList.remove('active');
+                btn.classList.remove('active');
+                btn.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!btn.contains(e.target) && !menu.contains(e.target) && menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                btn.classList.remove('active');
+                btn.setAttribute('aria-expanded', 'false');
+            }
+        });
+    })();
 </script>
 
 </body>
